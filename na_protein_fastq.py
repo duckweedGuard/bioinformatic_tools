@@ -54,7 +54,7 @@ def run_protein_tools(*args: str) -> str:
                 'get_occurrences': protein_tools.get_occurrences,
                 'count_variant_rna': protein_tools.count_variant_rna,
                 'determine_total_protein_charge': protein_tools.determine_total_protein_charge,
-                'calculate_pI': protein_tools.calculate_pi}
+                'calculate_pi': protein_tools.calculate_pi}
     command = commands[action]
     for seq in sequences:
         if not protein_tools.is_protein(seq):
