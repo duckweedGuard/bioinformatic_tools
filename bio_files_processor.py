@@ -23,7 +23,6 @@ def convert_multiline_fasta_to_oneline(input_fasta: str, output_fasta: str = 'co
                 out_file.write(line.strip())
 
 
-
 def bring_indexes(all_genes: list[str], matching_genes: list[str], out_neighboor_genes, n_before: int = 1,
                   n_after: int = 1) -> list[str]:
     """
@@ -43,7 +42,9 @@ def bring_indexes(all_genes: list[str], matching_genes: list[str], out_neighboor
         for index in range(gene_index - n_before if n_before <= gene_index else 0,
                            gene_index + n_after + 1 if n_after + gene_index <= (len(all_genes) - 1) else len(
                                all_genes)):
-            if all_genes[index] != gene and all_genes[index] not in out_neighboor_genes and all_genes[index] not in matching_genes:
+            if (all_genes[index] != gene and
+                        all_genes[index] not in out_neighboor_genes and
+                        all_genes[index] not in matching_genes:
                 out_neighboor_genes.append(all_genes[index])
     return out_neighboor_genes
 
