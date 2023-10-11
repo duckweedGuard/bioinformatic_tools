@@ -63,17 +63,23 @@ def run_protein_tools(*args: str) -> str:
     return str(command(sequences[0], sequences[1])) if len(sequences) == 2 else str(command(sequences[0]))
 
 
-def run_fastq_tool(seqs: dict, gc_bounds: tuple or int = (0, 100), length_bounds: tuple or int = (0, 2 ** 32),
-                   quality_threshold: int = 0) -> dict:
+def run_fastq_tool(input_path: str, input_filename: str, gc_bounds: tuple or int = (0, 100),
+                   length_bounds: tuple or int = (0, 2 ** 32),
+                   quality_threshold: int = 0,
+                   output_filename=None,
+                   output_data_dir: str = 'fastq_filtrator_resuls'):
     """
-    Main function that is used to get protein sequence(s) and command. It performs a given action
+    Main function that is used to get fastq sequence(s) and command. It performs a given action
 
-    :param seqs: seqs is a dictionary consisting of fastq sequences
+    :param input_path: given path where input file is
+    :param input_filename: input file name
     :param gc_bounds: GC composition interval (in percent) for filtering (default is (0, 100)
     :param length_bounds: length interval for filtering (default is (0, 2 ** 32)
     :param quality_threshold: threshold value of average quality of reid for filtering, default value is 0
-    :return: dictionary consisting of only those sequences that passed all conditions
+    :param output_filename: name file with filtered sequences will be saved
+    :param output_data_dir: path where the file with filtered sequences will be saved
     """
+    seqs = fastq_tool.read_fastq(input_path, input_filename)
     out_dict = {}
     for seq in seqs:
         filter_output = (
@@ -83,4 +89,4 @@ def run_fastq_tool(seqs: dict, gc_bounds: tuple or int = (0, 100), length_bounds
         )
         if filter_output:
             out_dict[seq] = seqs[seq]
-    return out_dict
+    fastq_tool.write_output_fastq(out_dict, input_filename, output_data_dir, output_filename)
