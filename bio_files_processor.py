@@ -93,3 +93,22 @@ def select_genes_from_gbk_to_fasta(input_gbk: str, genes: list[str],
         for neighboor_gene in out_neighboor_genes:
             out_file.write('>' + neighboor_gene + "\n")
             out_file.write(dict_gene_seq[neighboor_gene] + "\n")
+
+
+def change_fasta_start_pos(input_fasta: str, shift: int, output_fasta: str):
+    """
+    Shift the initial position in the one-line fasta with one record
+
+    :param input_fasta: one-line fasta with only one record
+    :param shift: an integer (can be negative) - how much to shift the initial position in the file
+    :param output_fasta: one-line fasta with one record with changed start position
+    """
+    with open(input_fasta, mode='r') as file, open(output_fasta, mode='w') as out_file:
+        name_line = file.readline()
+        seq_line = file.readline().strip()
+        if len(seq_line) < abs(shift):
+            check_point = len(seq_line) * (abs(shift) // len(seq_line))
+            shift = shift - check_point if shift > 0 else shift + check_point
+        new_seq_line = seq_line[shift:] + seq_line[:shift]
+        out_file.write(name_line)
+        out_file.write(new_seq_line)
