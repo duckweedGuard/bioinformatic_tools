@@ -1,4 +1,4 @@
-# Homework 5
+# Homework 6
 ## bioinformatic_tools ･ﾟ✧(=✪ ᆺ ✪=)･ﾟ✧
 
 **ᶘ⊙ᴥ⊙ᶅ** Author: Orlova Victoria.
@@ -13,6 +13,7 @@
   * [Module dna_rna_tools.py functional content](#module_dna_rna) 
   * [Module protein_tools.py functional content](#module_protein)
   * [Module fastq_tool.py functional content](#module_fastq)
+  * [What is in bio_files_processor.py?](#what_is_bio)
   * [Usage example](#examples)
 
 ◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆
@@ -21,23 +22,37 @@
 ```
 -/
  |- na_protein_fastq.py # (imports & 3 functions)
+ |- bio_files_processor.py # (4 functions)
  |- README.md
+ |- fasta.fasta
  |- modules/
        |- dna_rna_tools.py
        |- protein_tools.py
        |- fastq_tool.py
+ |- data/
+       |- short_example_gbt.gbt
+       |- fastq.fastq
+       |- start_pos_fasta.fasta
+       |- example_blast_results.txt
+
 ```
 
-There are 3 functions in the `na_protein_fastq.py` script: main function HW 3 (`run_dna_rna_tools.py`), main function HW 4 (`run_protein_tools.py`) and main function HW 5 (`run_fastq_tool.py`). The other functions are imported in the na_protein_fastq.py script, but are defined in the scripts in the `modules` folder.
+There are 3 functions in the `na_protein_fastq.py` script: main function HW 3 (`run_dna_rna_tools.py`), main function HW 4 (`run_protein_tools.py`) and :sparkles:updated:sparkles: in HW6 main function HW5 (`run_fastq_tool.py`). The other functions are imported in the na_protein_fastq.py script, but are defined in the scripts in the `modules` folder.
+
+:sparkles: New :sparkles: There are 4 functions in the `bio_files_processor.py` script: function `convert_multiline_fasta_to_oneline`, function `select_genes_from_gbk_to_fasta`, function `change_fasta_start_pos` and function `parse_blast_output`. Functions use file-based input and output. All input files lie in the `date` folder, output files are created in the root of the repository. Read the descriptions of functions for more details.
+
 
 ### ᶘಠᴥಠᶅ What is in na_protein_fastq.py? ᶘಠᴥಠᶅ  <a name="what_is"></a> 
 * The function `run_dna_rna_tools` takes as input an arbitrary number of arguments with DNA or RNA sequences (`str`) and the name of the procedure to be executed (always the last argument, `str`). After that the command performs the specified action on all submitted sequences using `modules/dna_rna_tools.py`. If one sequence is submitted, a string with the result is returned. If several sequences are passed - a list of strings is returned.
 * The function `protein_tool.py` takes as input the name of the procedure and the sequence of amino acids, or two sequences, in the case of some procedures. This chair is designed for processing protein sequences using `modules/protein_tools.py`. The function returns a string that reflects the results of working with the sequence.
-* Utility for working with fastq-sequences `run_fastq_tool.py` takes 4 arguments as input: `seqs`, `gc_bounds`, `length_bounds`, `quality_threshold`.
-  1. `seqs` is a dictionary consisting of fastq sequences. The structure is as follows. Key - a string, the name of the sequence. Value - a tuple of two strings: sequence and quality. This is essentially the contents of the fastq file, but you and I haven't gone through reading files yet. So we'll use the python dictionary for now. Then it will be enough to add reading files and writing them to a dictionary of this kind, so that everything works from start to finish. The example_data.py script has an example for you to debug.
-  2. `gc_bounds` - GC composition interval (in percent) for filtering (default is (0, 100), i.e. all sequences are saved). If a single number is passed in the argument, it is considered to be the upper bound. Examples: gc_bounds = (20, 80) - save only reids with GC composition from 20 to 80%, gc_bounds = 44.4 - save reids with GC composition less than 44.4%.
-  3. `length_bounds` - length interval for filtering, everything is similar to gc_bounds, but by default it is equal to (0, 2**32).
-  4. `quality_threshold` - threshold value of average quality of reid for filtering, default value is 0 (phred33 scale). Sequences with average quality of all nucleotides below the threshold are discarded.
+* :sparkles: New :sparkles: Utility for working with fastq-sequences `run_fastq_tool.py` takes 7 arguments as input: `input_path`, `input_filename`, `gc_bounds`, `length_bounds`, `quality_threshold`,  `output_filename`, `output_data_dir`.
+  1. `input_path` - given path where input file is (in our example `input_path = 'data'`) 
+  2. `input_filename` - given input file name
+  3. `gc_bounds` - GC composition interval (in percent) for filtering (default is (0, 100), i.e. all sequences are saved). If a single number is passed in the argument, it is considered to be the upper bound. Examples: gc_bounds = (20, 80) - save only reids with GC composition from 20 to 80%, gc_bounds = 44.4 - save reids with GC composition less than 44.4%.
+  4. `length_bounds` - length interval for filtering, everything is similar to gc_bounds, but by default it is equal to (0, 2**32).
+  5. `quality_threshold` - threshold value of average quality of reid for filtering, default value is 0 (phred33 scale). Sequences with average quality of all nucleotides below the threshold are discarded.
+  6. `output_filename` - name file with filtered sequences will be saved
+  7. `output_data_dir` - path where the file with filtered sequences will be saved, if `None`, will create `fastq_filtrator_resuls` folder
 
 
 **(∿°○°)∿ .・。.・゜✭・.・。.・゜✭・.・。.・゜✭・.・。.・゜✭・.・。.・゜✭・.・。.・゜✭・.・。.・゜✭・.・。.・゜✭・.・。.・゜✭**
@@ -81,10 +96,26 @@ Using this function you may encounter an error **ValueError: Amino acid not foun
 * The `count_gc` function takes a tuple of two strings: sequence and quality and gc_bounds as input. Function calculates GC composition and if the obtained value is not within the GC composition interval for filtering, it returns False, else function returns True.
 * The `filter_length` function takes a tuple of two strings: sequence and quality and length_bounds as input. Finds the length and if the obtained value is not included in the length interval for filtering, function returns False, else it returns True.
 * The `filter_quality` function takes a tuple of two strings: sequence and quality and quality_threshold as input. Finds the average quality of the reed and if the obtained value is greater than the threshold value of the average quality of the reed for filtering, function returns False, else it returns True.
+* :sparkles: New :sparkles: The `read_fastq` function takes a input_path (str) and input_filename (str) as input. Read file and translate data into a dictionary consisting of fastq sequences. The structure is as follows. Key - a string, the name of the sequence. Value - a tuple of two strings: sequence and quality.
+* :sparkles: New :sparkles: The `write_output_fastq` function takes a out_dict (post-work filtered dictionary), input_filename (str), output_data_dir (str), output_filename (str). Function writes filtered fastq seqbenses into a fastq-file.
+
+
+### ᶘಠᴥಠᶅ What is in bio_files_processor.py? ᶘಠᴥಠᶅ  <a name="what_is_bio"></a> :sparkles: New :sparkles:
+There are 4 functions in the `bio_files_processor.py` script: function `convert_multiline_fasta_to_oneline`, function `select_genes_from_gbk_to_fasta`, function `change_fasta_start_pos` and function `parse_blast_output`. 
+* The `convert_multiline_fasta_to_oneline` takes an input_fasta (str) as imput file name. Reads an input fasta file in which the sequence (DNA/RNA/protein/ ... ) can be split into several lines, then saves it into a new fasta file in which each sequence fits into one line. The `.fasta` extension is appended to the `output_fasta` name, if `output_fasta = None`, then 'converted_' is appended to the input_fasta file name.
+* The 'select_genes_from_gbk_to_fasta' takes an input_gbk (str), genes (list of str), n_before (int, default = 1), n_after (int, default = 1), output_fasta (default = 'output_neighboor_genes_fasta'). Function select n_before number of genes before and n_after number of genes after each gene of interest from .gbk file and save their protein sequence (translation) to a fasta file. Use `bring_indexes` function below
+* `bring_indexes` function receives as input a list of all genes found in the file (all_genes), a list of target genes - genes of interest (matching_genes), list for answer (out_neighboor_genes), number of genes before (>0, default value is 1), number of genes after (>0, default value is 1). Then selects genes neighboring the genes of interest, located at a given distance before or after the gene of interest. In case the gene of interest is closer to the beginning/end than the number of neighbors we are looking for, it selects only the possible ones. If two genes of interest are next/ close to each other, they are not included in the final out_neighboor_genes list.
+* The `change_fasta_start_pos` function takes an input_fasta (str), shift (int), output_fasta (str) as input. Function shift the initial position in the one-line fasta with one record. If `abs(shift)` is bigger than fasta-record sequense, then there is an correction by division.
+* The `parse_blast_output` function takes an input_file (str), output_file (str) (if `output_file = None`, then `output_file = 'parse_blast_blast_results.txt'`) as input. Function reads the given txt file, for each QUERY select the first line from the Description column. Save the list of obtained proteins to a new file in a single column sorted alphabetically.
+
+
 
 ◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆
 ### Usage example: <a name="examples"></a> 
+
+
 **☆ ☆ ☆ :. o(≧▽≦)o .: ☆ ☆ ☆**
+
 **1. Operations with nucleic acids sequences** 
 ``` python
 run_dna_rna_tools('ATG', 'transcribe') # 'AUG'
@@ -97,6 +128,7 @@ run_dna_rna_tools('ATg', 'AaTttGCCaCaC', 'translation_dna_protein') # ['M', 'NLP
 ```
 
 **☆ ☆ ☆ :. o(≧▽≦)o .: ☆ ☆ ☆**
+
 **2. Operations with protein sequences**
 ``` python
 protein_tool('TATAQQQWRVVTDDDA', 'count_variant_rna') # '25165824'
@@ -111,17 +143,51 @@ run_protein_tools('ARNDCQA', 'A', 'find_amino_acid_indices') # '1, 7'
 ```
 
 **☆ ☆ ☆ :. o(≧▽≦)o .: ☆ ☆ ☆**
-**3. fastq-seqbences selection**
-``` python
-seqs = {
-    '@SRX079804:1:SRR292678:1:1101:21885:21885': ('ACAGCAACATAAACATGATGGGATGGCGTAAGCCCCCGAGATATCAGTTTACCCAGGATAAGAGATTAAATTATGAGCAACATTATTAA', 'FGGGFGGGFGGGFGDFGCEBB@CCDFDDFFFFBFFGFGEFDFFFF;D@DD>C@DDGGGDFGDGG?GFGFEGFGGEF@FDGGGFGFBGGD'),
-    '@SRX079804:1:SRR292678:1:1101:24563:24563': ('ATTAGCGAGGAGGAGTGCTGAGAAGATGTCGCCTACGCCGTTGAAATTCCCTTCAATCAGGGGGTACTGGAGGATACGAGTTTGTGTG', 'BFFFFFFFB@B@A<@D>BDDACDDDEBEDEFFFBFFFEFFDFFF=CC@DDFD8FFFFFFF8/+.2,@7<<:?B/:<><-><@.A*C>D'),
-    '@SRX079804:1:SRR292678:1:1101:30161:30161': ('GAACGACAGCAGCTCCTGCATAACCGCGTCCTTCTTCTTTAGCGTTGTGCAAAGCATGTTTTGTATTACGGGCATCTCGAGCGAATC', 'DFFFEGDGGGGFGGEDCCDCEFFFFCCCCCB>CEBFGFBGGG?DE=:6@=>A<A>D?D8DCEE:>EEABE5D@5:DDCA;EEE-DCD'),
-    '@SRX079804:1:SRR292678:1:1101:47176:47176': ('TGAAGCGTCGATAGAAGTTAGCAAACCCGCGGAACTTCCGTACATCAGACACATTCCGGGGGGTGGGCCAATCCATGATGCCTTTG', 'FF@FFBEEEEFFEFFD@EDEFFB=DFEEFFFE8FFE8EEDBFDFEEBE+E<C<C@FFFFF;;338<??D:@=DD:8DDDD@EE?EB')
-}
-print(run_fastq_tool(seqs, gc_bounds=40, length_bounds=(0, 2 ** 32), quality_threshold=37))
-# {'@SRX079804:1:SRR292678:1:1101:21885:21885': ('ACAGCAACATAAACATGATGGGATGGCGTAAGCCCCCGAGATATCAGTTTACCCAGGATAAGAGATTAAATTATGAGCAACATTATTAA', 'FGGGFGGGFGGGFGDFGCEBB@CCDFDDFFFFBFFGFGEFDFFFF;D@DD>C@DDGGGDFGDGG?GFGFEGFGGEF@FDGGGFGFBGGD')}
 
+ **3. fastq-seqbences selection** :sparkles: New :sparkles:
+``` python
+print(run_fastq_tool('data', 'fastq.fastq', 40, 60, 20))
 ```
+After the function is run, the `fastq.fastq` file from the folder`data` will be read, then filtering will be done and the answer will be written to the `fastq_filtrator_resuls` folder (if it does not exist, it will be created) under the entered  `output_filename` (if the `output_filename` was not entered, it will be named as follows: `filtered_` + input_filename, in example `filtered_fastq.fastq`)
+
+
+**☆ ☆ ☆ :. o(≧▽≦)o .: ☆ ☆ ☆**
+
+ **4. Operations with bio_files_processor.py** :sparkles: New :sparkles:
+ 
+**4.1. convert_multiline_fasta_to_oneline**
+
+``` python
+convert_multiline_fasta_to_oneline('fasta.fasta')
+```
+
+
+**4.2. select_genes_from_gbk_to_fasta**
+
+``` python
+nput_gbk = 'data/short_example_gbt.gbt'
+genes = ['mngR', 'pxpB']
+n_before = 2
+n_after = 2
+select_genes_from_gbk_to_fasta(input_gbk, genes, n_before, n_after)
+```
+
+**4.3. change_fasta_start_pos**
+
+``` python
+input_fasta = 'data/start_pos_fasta.fasta'
+shift = -1
+output_fasta = 'changed_start_pos_fasta.fasta'
+change_fasta_start_pos(input_fasta, shift, output_fasta)
+```
+
+
+**4.4. parse_blast_output**
+``` python
+input_file = 'data/example_blast_result.txt'
+parse_blast_output(input_file)
+```
+
+
 
 ◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆
