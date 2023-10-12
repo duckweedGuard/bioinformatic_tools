@@ -112,3 +112,30 @@ def change_fasta_start_pos(input_fasta: str, shift: int, output_fasta: str):
         new_seq_line = seq_line[shift:] + seq_line[:shift]
         out_file.write(name_line)
         out_file.write(new_seq_line)
+
+
+def parse_blast_output(input_file: str, output_file: str = None):
+    """
+    Reads the given txt file, for each QUERY select the first line from the Description column.
+    Save the set of obtained proteins to a new file in a single column sorted alphabetically
+
+    :param input_file: path to the input txt file
+    :param output_file: name of the output file
+    """
+    if output_file is None:
+        output_file = 'parse_blast_blast_results.txt'
+    with open(input_file, mode='r') as file, open(output_file, mode='w') as out_file:
+        protein_seqs = []
+        for line in file:
+            if 'Sequences producing significant alignments' in line:
+                test = 0
+                while test == 0:
+                    new_line = file.readline()
+                    if 'Description' in new_line:
+                        protein_line = file.readline().strip()
+                        test = 1
+                        if "  " in protein_line:
+                            protein_seqs.append(protein_line.split("  ")[0])
+        protein_seqs.sort()
+        for protein_seq in protein_seqs:
+            out_file.write(protein_seq + "\n")
