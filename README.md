@@ -30,7 +30,7 @@
        |- protein_tools.py
        |- fastq_tool.py
  |- data/
-       |- short_example_gbt.gbt
+       |- short_example_gbk.gbk
        |- fastq.fastq
        |- start_pos_fasta.fasta
        |- example_blast_results.txt
