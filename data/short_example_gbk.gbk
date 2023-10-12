@@ -1,0 +1,643 @@
+LOCUS       NODE_1_length_2558431_cov_75.1851642558431 bp   DNA linear
+BCT28-ноя-2022
+DEFINITION  Escherichia coli strain strain.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; gamma subdivision; Enterobacteriaceae;
+            Escherichia.
+COMMENT     Annotated using prokka 1.14.6 from
+            https://github.com/tseemann/prokka.
+FEATURES             Location/Qualifiers
+     source          1..2558431
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="strain"
+                     /db_xref="taxon:562"
+     CDS             384..893
+                     /locus_tag="IFLAKNEJ_00001"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MNQQRFDDSTLIRIFALHELHRLKEHGLTRGALLDYHSRYKLVF
+                     LAHSQPEYRKLGPFVADIHQWQNLDDFYNQYYQRVIVLLSHPANPRDHTNVLMHVQGY
+                     FRPHIDSTERQQLAALIDSYRRGEQPLLAPLMRIKHYMALYPDAWLSGQRYFELWPRV
+                     INLRHSGVL"
+     CDS             890..2308
+                     /gene="phrB"
+                     /locus_tag="IFLAKNEJ_00002"
+                     /EC_number="4.1.99.3"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P00914"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Deoxyribodipyrimidine photo-lyase"
+                     /db_xref="COG:COG0415"
+                     /translation="MITHLVWFRQDLRLHDNLALAAACRNSSARVLALYIATPRQWAT
+                     HNMSPRQAELINAQLNGLQIALAEKGIPLLFREVDDFVASVEIVKQVCAENSVTHLFY
+                     NYQYEVNERARDVEVERALRNVVCEGFDDSVILPPGAVMTGNHEMYKVFTPFKNAWLK
+                     RLREGMPECVAAPKVRSSGSIEPAPSITLNYPRQSFDTAHFPVEEKAAIAQLRQFCQN
+                     GAGEYEQQRDFPAVEGTSRLSASLATGGLSPRQCLHRLLAEQPQALDGGAGSVWLSEL
+                     IWREFYRHLMTYYPSLCKHCPFIAWTDRVQWQSNPAHLQAWQKGKTGYPIVDAAMRQL
+                     NSTGWMHNRLRMITASFLVKDLLIDWREGERYFMSQLIDGDLAANNGGWQWAASTGTD
+                     AAPYFRIFNPITQGEKFDREGEFIRRWLPELRDVPGKAVHEPWKWAQKAGVKLDYPQP
+                     IVDHKEARLRTLAAYEEARKGA"
+     CDS             complement(2350..3831)
+                     /gene="dtpD"
+                     /locus_tag="IFLAKNEJ_00003"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P75742"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Dipeptide permease D"
+                     /db_xref="COG:COG3104"
+                     /translation="MNKHASQPRAIYYVVALQIWEYFSFYGMRALLILYLTNQLKYND
+                     THAYELFSAYCSLVYVTPILGGFLADKVLGNRMAVMLGALLMAIGHVVLGASEIHPSF
+                     LYLSLAIIVCGYGLFKSNVSCLLGELYEPTDPRRDGGFSLMYAAGNVGSIIAPIACGY
+                     AQEEYSWAMGFGLAAVGMIAGLVIFLCGNRHFTHTRGVNKKVLRATNFLLPNWGWLLV
+                     LLVATPALITVLFWKEWSVYALIVATIIGLGVLAKIYRKAENQKQRKELGLIVTLTFF
+                     SMLFWAFAQQGGSSISLYIDRFVNRDMFGYTVPTAMFQSINAFAVMLCGVFLAWVVKE
+                     SVAGNRTVRIWGKFALGLGLMSAGFCILTLSARWSAMYGHSSLPLMVLGLAVMGFAEL
+                     FIDPVAMSQITRIEIPGVTGVLTGIYMLLSGAIANYLAGVIADQTSQASFDASGAINY
+                     SINAYIEVFDQITWGALACVGLVLMIWLYQALKFRNRALALES"
+     CDS             4102..4845
+                     /gene="ybgI"
+                     /locus_tag="IFLAKNEJ_00004"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AFP6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="GTP cyclohydrolase 1 type 2"
+                     /db_xref="COG:COG0327"
+                     /translation="MKNTELEQLINEKLNSAAISDYAPNGLQVEGKETVQKIVTGVTA
+                     SQALLDEAVRLGADAVIVHHGYFWKGESPVIRGMKRNRLKTLLANDINLYGWHLPLDA
+                     HPELGNNAQLAALLGITVMGEIEPLVPWGELTMPVPGLELASWIEARLGRKPLWCGDT
+                     GPEVVQRVAWCTGGGQSFIDSAARFGVDAFITGEVSEQTIHSAREQGLHFYAAGHHAT
+                     ERGGIRALSEWLNENTDLDVTFIDIPNPA"
+     CDS             4868..5524
+                     /gene="pxpB"
+                     /locus_tag="IFLAKNEJ_00005"
+                     /EC_number="3.5.2.9"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AAV4"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="5-oxoprolinase subunit B"
+                     /db_xref="COG:COG2049"
+                     /translation="MQRARCYLIGETAVVLELEPPVTLASQKRIWRLAQRLVDMPNVV
+                     EAIPGMNNITVILRNPESLALDAIERLQRWWEESEALEPESRFIEIPVVYGGAGGPDL
+                     AVVAAHCGLSEKQVVELHSSVEYVVWFLGFQPGFPYLGSLPEQLHTPRRAEPRLLVPA
+                     GSVGIGGPQTGVYPLATPGGWQLIGHTSLSLFDPARDEPILLRPGDSVRFVPQKEGVC
+                     "
+     CDS             5518..6450
+                     /gene="pxpC"
+                     /locus_tag="IFLAKNEJ_00006"
+                     /EC_number="3.5.2.9"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P75745"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="5-oxoprolinase subunit C"
+                     /db_xref="COG:COG1984"
+                     /translation="MLKIIRAGMYTTVQDGGRHGFRQSGISHCGALDMPALRIANLLV
+                     GNDANAPALEITLGQLTVEFETDGWFALTGAGCEARLDDNAVWTGWRLPMKAGQRLTL
+                     KRPQHGMRSYLAVAGGIDVPPVMGSCSTDLNVGIGGLEGRLLKDGDRLPIGKSKRDFM
+                     EAQGVKQLLWGNRIRALPGPEYHEFDRASQDAFWRSPWQLSPQSNRMGYRLQGQILKR
+                     TTDRELLSHGLLPGVVQVPHNGQPIVLMNDAQTTGGYPRIACIIEADMYHLAQIPLGQ
+                     PIHFVQCSLEEALKARQDQQRYFEQLAWRLHNEN"
+     CDS             6440..7174
+                     /gene="pxpA"
+                     /locus_tag="IFLAKNEJ_00007"
+                     /EC_number="3.5.2.9"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P75746"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="5-oxoprolinase subunit A"
+                     /db_xref="COG:COG1540"
+                     /translation="MKIDLNADLGEGCASDAELLTLVSSANIACGFHAGDAQTMQACV
+                     REAIKNGVAIGAHPSFPDRENFGRSAMQLPPETVYAQTLYQIGALATIARAQGGVMRH
+                     VKPHGMLYNQAAKEAQLADAIARAVYACDPALVLVGLAGSELIRAGKQYGLTTREEVF
+                     ADRGYQADGSLVPRSQPGALIENEEQALAQTLEMVQHGRVKSITGEWATVTAQTVCLH
+                     GDGEHALAFARRLRSTFAEKEIVVAA"
+     CDS             7210..8001
+                     /gene="nei"
+                     /locus_tag="IFLAKNEJ_00008"
+                     /EC_number="3.2.2.-"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P50465"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Endonuclease 8"
+                     /db_xref="COG:COG0266"
+                     /translation="MPEGPEIRRAADNLEAAIKGKPLTDVWFAFPQLKTYQSQLIGQH
+                     VTHVETRGKALLTHFSNDLTLYSHNQLYGVWRVVDTSEEPQTTRVLRVKLQTADKTIL
+                     LYSASDIEMLRPEQLTTHPFLQRVGPDVLDPNLTPEVVKERLLSPRFRNRQFAGLLLD
+                     QAFLAGLGNYLRVEILWQVGLTGNHKAKDLNAAQLDALAHALLEIPRFSYATRGQVDE
+                     NKHHGALFRFKVFHRDGELCERCGGIIEKTTLSSRPFYWCPGCQH"
+     CDS             complement(7998..9044)
+                     /locus_tag="IFLAKNEJ_00009"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MPVLQWGMLCVLSLLLSIGFLAVHLPAALLLGPMIAGIIFSMRG
+                     ITLQLPRSAFLAAQAILGCMIAQNLTGSILTTLAANWPIVLAILLVTLLSSAIVGWLL
+                     VRYSSLPGNTGAWGSSPGGAAAMVAMAQDYGADIRLVAFMQYLRVLFVAGAAVLVTRM
+                     MLGDNAEAVNQQIVWFPPVSINLLLTILLAVVAGTAGCMLRLPSGTMLIPMLAGAVLQ
+                     SGQLITIELPEWLLAMAYMAIGWRIGLGFDKQILLRALRPLPQILLSIFALLAICAGM
+                     AWGLTRFMHIDFMTAYLATSPGGLDTVAVIAAGSNADMALIMAMQTLRLFSILLTGPA
+                     IARFISTYAPKRSA"
+     CDS             complement(9196..9846)
+                     /locus_tag="IFLAKNEJ_00010"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MGWQNKICSGDPANIHMSRTFLARMRLYVKIREMPPHDYQSTLS
+                     DYIVVQFDGAGSVNEDPTAQNLKYHITGLENIRVLDCSVNFSISPETQVIDFGKFNLL
+                     DIRRHTMSKTFSIKTTKSQNDQCTDGFKVSSSFYTEETLVEEDKALLIGNGLKLRLLD
+                     ENASPYTFNKYAEYADFTSDMLVYEKTYTAELSSIAGTPIEAGPFDTVVLFKINYN"
+     CDS             complement(9881..10258)
+                     /locus_tag="IFLAKNEJ_00011"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:ISfinder:IS1R"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="IS1 family transposase IS1R"
+                     /db_xref="COG:COG1662"
+                     /translation="MDEQWGYVGAKSRQRWLFYAYDRLRKTVVAHVFGERTMATLGRL
+                     MSLLSPFDVVIWMTDGWPLYESRLKGKLHVISKRYTQRIERHNLNLRQHLARLGRKSL
+                     SFSKSVELHDKVIGHYLNIKHYQ"
+     CDS             complement(10303..10578)
+                     /locus_tag="IFLAKNEJ_00012"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:ISfinder:IS1A"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="IS1 family transposase IS1A"
+                     /db_xref="COG:COG1662"
+                     /translation="MASVSISCPSCSATDGVVRNGKSTAGHQRYLCSHCRKTWQLQFT
+                     YTASQPGTHQKIIDMAMNGVGCRATARIMGVGLNTILRHLKNSGRSR"
+     CDS             complement(10607..10855)
+                     /locus_tag="IFLAKNEJ_00013"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MNIYRLSFVSCLVVAMPCALAVEFNLNVLDKSMRDRIDISLLKE
+                     KGVIAPGEYFVSVAVNNNQISNGQKINWHKGDAANLLI"
+     CDS             complement(10915..11481)
+                     /gene="ybgD_1"
+                     /locus_tag="IFLAKNEJ_00014"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P37909"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="putative fimbrial-like protein YbgD"
+                     /translation="MFKGQKTLAALAVSLLFTAPVYAADEGSGEIHFKGEVIEAPCEI
+                     HQDDIDKEVELGQVTTSHINQSHHSDAVAVDLRLVNCDLENSSNGSGGKISKVAVTFD
+                     SSAKTTGADPILNNTSTGEATGVGVRLMNKDQSNIVLGTATPDIDLAPTSSEQTLNFF
+                     AWMEQIDQATPVTPGAVTANATYVLDYK"
+     CDS             complement(11871..13154)
+                     /gene="gltA"
+                     /locus_tag="IFLAKNEJ_00015"
+                     /EC_number="2.3.3.16"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0ABH7"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Citrate synthase"
+                     /db_xref="COG:COG0372"
+                     /translation="MADTKAKLTLNGDTAVELDVLKGTLGQDVIDIRTLGSKGVFTFD
+                     PGFTSTASCESKITFIDGDEGILLHRGFPIDQLATDSNYLEVCYILLNGEKPTQEQYD
+                     EFKTTVTRHTMIHEQITRLFHAFRRDSHPMAVMCGITGALAAFYHDSLDVNNPRHREI
+                     AAFRLLSKMPTMAAMCYKYSIGQPFVYPRNDLSYAGNFLNMMFSTPCEPYEVNPILER
+                     AMDRILILHADHEQNASTSTVRTAGSSGANPFACIAAGIASLWGPAHGGANEAALKML
+                     EEISSVKHIPEFVRRAKDKNDSFRLMGFGHRVYKNYDPRATVMRETCHEVLKELGTKD
+                     DLLEVAMELENIALNDPYFIEKKLYPNVDFYSGIILKAMGIPSSMFTVIFAMARTVGW
+                     IAHWSEMHSDGMKIARPRQLYTGYEKRDFKSDIKR"
+     CDS             complement(13360..13467)
+                     /gene="ybgU"
+                     /locus_tag="IFLAKNEJ_00016"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0DPN5"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Protein YbgU"
+                     /translation="MRKSYEVGISPKINLCNSVEVLTNSFGTVISGRQV"
+     CDS             13848..14252
+                     /gene="sdhC"
+                     /locus_tag="IFLAKNEJ_00017"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P69054"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Succinate dehydrogenase cytochrome b556 subunit"
+                     /db_xref="COG:COG2009"
+                     /translation="MWALFMIRNVKKQRPVNLDLQTIRFPITAIASILHRVSGVITFV
+                     AVGILLWLLGTSLSSPEGFEQASAIMGSFFVKFIMWGILTALAYHVVVGIRHMMMDFG
+                     YLEETFEAGKRSAKISFVITVVLSLLAGVLVW"
+     CDS             14246..14593
+                     /gene="sdhD"
+                     /locus_tag="IFLAKNEJ_00018"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AC44"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Succinate dehydrogenase hydrophobic membrane
+                     anchor subunit"
+                     /db_xref="COG:COG2142"
+                     /translation="MVSNASALGRNGVHDFILVRATAIVLTLYIIYMVVFFATSGELT
+                     YEVWIGFFASAFTKVFTLLALFSILIHAWIGMWQVLTDYVKPLALRLMLQLVIVVALV
+                     VYVIYGFVVVWGV"
+     CDS             14593..16359
+                     /gene="sdhA"
+                     /locus_tag="IFLAKNEJ_00019"
+                     /EC_number="1.3.5.1"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AC41"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Succinate dehydrogenase flavoprotein subunit"
+                     /db_xref="COG:COG1053"
+                     /translation="MKLPVREFDAVVIGAGGAGMRAALQISQSGQTCALLSKVFPTRS
+                     HTVSAQGGITVALGNTHEDNWEWHMYDTVKGSDYIGDQDAIEYMCKTGPEAILELEHM
+                     GLPFSRLDDGRIYQRPFGGQSKNFGGEQAARTAAAADRTGHALLHTLYQQNLKNHTTI
+                     FSEWYALDLVKNQDGAVVGCTALCIETGEVVYFKARATVLATGGAGRIYQSTTNAHIN
+                     TGDGVGMAIRAGVPVQDMEMWQFHPTGIAGAGVLVTEGCRGEGGYLLNKHGERFMERY
+                     APNAKDLAGRDVVARSIMIEIREGRGCDGPWGPHAKLKLDHLGKEVLESRLPGILELS
+                     RTFAHVDPVKEPIPVIPTCHYMMGGIPTKVTGQALTVNEKGEDVVVPGLFAVGEIACV
+                     SVHGANRLGGNSLLDLVVFGRAAGLHLQESIAEQGALRDASESDVEASLDRLNRWNNN
+                     RNGEDPVAIRKALQECMQHNFSVFREGDAMAKGLEQLKVIRERLKNARLDDTSSEFNT
+                     QRVECLELDNLMETAYATAVSANFRTESRGAHSRFDFPDRDDENWLCHSLYLPESESM
+                     TRRSVNMEPKLRPAFPPKIRTY"
+     CDS             16375..17091
+                     /gene="sdhB"
+                     /locus_tag="IFLAKNEJ_00020"
+                     /EC_number="1.3.5.1"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P07014"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Succinate dehydrogenase iron-sulfur subunit"
+                     /db_xref="COG:COG0479"
+                     /translation="MRLEFSIYRYNPDVDDAPRMQDYTLEAEEGRDMMLLDALIQLKE
+                     KDPSLSFRRSCREGVCGSDGLNMNGKNGLACITPISALNQPGKKIVIRPLPGLPVIRD
+                     LVVDMGQFYAQYEKIKPYLLNNGQNPPAREHLQMPEQREKLDGLYECILCACCSTSCP
+                     SFWWNPDKFIGPAGLLAAYRFLIDSRDTETDSRLDGLSDAFSVFRCHSIMNCVSVCPK
+                     GLNPTRAIGHIKSMLLQRNA"
+     CDS             17292..20093
+                     /gene="sucA"
+                     /locus_tag="IFLAKNEJ_00021"
+                     /EC_number="1.2.4.2"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AFG3"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-oxoglutarate dehydrogenase E1 component"
+                     /db_xref="COG:COG0567"
+                     /translation="MQNSALKAWLDSSYLSGANQSWIEQLYEDFLTDPDSVDANWRST
+                     FQQLPGTGVKPDQFHSQTREYFRRLAKDASRYSSTISDPDTNVKQVKVLQLINAYRFR
+                     GHQHANLDPLGLWQQDKVADLDPSFHDLTEADFQETFNVGSFASGKETMKLGELLEAL
+                     KQTYCGPIGAEYMHITSTEEKRWIQQRIESGRATFNSEEKKRFLSELTAAEGLERYLG
+                     AKFPGAKRFSLEGGDALIPMLKEMIRHAGNSGTREVVLGMAHRGRLNVLVNVLGKKPQ
+                     DLFDEFAGKHKEHLGTGDVKYHMGFSSDFQTDGGLVHLALAFNPSHLEIVSPVVIGSV
+                     RARLDRLDEPSSNKVLPITIHGDAAVTGQGVVQETLNMSKARGYEVGGTVRIVINNQV
+                     GFTTSNPLDARSTPYCTDIGKMVQAPIFHVNADDPEAVAFVTRLALDFRNTFKRDVFI
+                     DLVCYRRHGHNEADEPSATQPLMYQKIKKHPTPRKIYADKLEQEKVATLEDATEMVNL
+                     YRDALDAGDCVVAEWRPMNMHSFTWSPYLNHEWDEEYPNKVEMKRLQELAKRISTVPE
+                     AVEMQSRVAKIYGDRQAMAAGEKLFDWGGAENLAYATLVDEGIPVRLSGEDSGRGTFF
+                     HRHAVIHNQSNGSTYTPLQHIHNGQGAFRVWDSVLSEEAVLAFEYGYATAEPRTLTIW
+                     EAQFGDFANGAQVVIDQFISSGEQKWGRMCGLVMLLPHGYEGQGPEHSSARLERYLQL
+                     CAEQNMQVCVPSTPAQVYHMLRRQALRGMRRPLVVMSPKSLLRHPLAVSSLEELANGT
+                     FLPAIGEIDELDPKGVKRVVMCSGKVYYDLLEQRRKNNQHDVAIVRIEQLYPFPHKAM
+                     QEVLQQFAHVKDFVWCQEEPLNQGAWYCSQHHFREVIPFGASLRYAGRPASASPAVGY
+                     MSVHQKQQQDLVNDALNVE"
+     CDS             20108..21325
+                     /gene="sucB"
+                     /locus_tag="IFLAKNEJ_00022"
+                     /EC_number="2.3.1.61"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AFG6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Dihydrolipoyllysine-residue succinyltransferase
+                     component of 2-oxoglutarate dehydrogenase complex"
+                     /db_xref="COG:COG0508"
+                     /translation="MSSVDILVPDLPESVADATVATWHKKPGDAVVRDEVLVEIETDK
+                     VVLEVPASADGILDAVLEDEGTTVTSRQILGRLREGNSAGKETSAKSEEKASTPAQRQ
+                     QASLEEQNNDALSPAIRRLLAEHNLDASAIKGTGVGGRLTREDVEKHLAKAPAKESAP
+                     AAADPAAQPALAARSEKRVPMTRLRKRVAERLLEAKNSTAMLTTFNEVNMKPIMDLRK
+                     QYGEAFEKRHGIRLGFMSFYVKAVVEALKRYPEVNASIDGDDVVYHNYFDVSMAVSTP
+                     RGLVTPVLRDVDTLGMADIEKKIKELAVKGRDGKLTVEDLTGGNFTITNGGVFGSLMS
+                     TPIINPPQSAILGMHAIKDRPMAVNGQVEILPMMYLALSYDHRLIDGRESVGFLVTIK
+                     ELLEDPTRLLLDV"
+     CDS             21419..22585
+                     /gene="sucC"
+                     /locus_tag="IFLAKNEJ_00023"
+                     /EC_number="6.2.1.5"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0A836"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Succinate--CoA ligase [ADP-forming] subunit
+                     beta"
+                     /db_xref="COG:COG0045"
+                     /translation="MNLHEYQAKQLFARYGLPAPVGYACTTPREAEEAASKIGAGPWV
+                     VKCQVHAGGRGKAGGVKVVNSKEDIRAFAENWLGKRLVTYQTDANGQPVNQILVEAAT
+                     DIAKELYLGAVVDRSSRRVVFMASTEGGVEIEKVAEETPHLIHKVALDPLTGPMPYQG
+                     RELAFKLGLEGKLVQQFTKIFMGLATIFLERDLALIEINPLVITKQGDLICLDGKLGA
+                     DGNALFRQPDLREMRDQSQEDPREAQAAQWELNYVALDGNIGCMVNGAGLAMGTMDIV
+                     KLHGGEPANFLDVGGGATKERVTEAFKIILSDDKVKAVLVNIFGGIVRCDLIADGIIG
+                     AVAEVGVNVPVVVRLEGNNAELGAKKLADSGLNIIAAKGLTDAAQQVVAAVEGK"
+     CDS             22585..23454
+                     /gene="sucD"
+                     /locus_tag="IFLAKNEJ_00024"
+                     /EC_number="6.2.1.5"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0AGE9"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Succinate--CoA ligase [ADP-forming] subunit
+                     alpha"
+                     /db_xref="COG:COG0074"
+                     /translation="MSILIDKNTKVICQGFTGSQGTFHSEQAIAYGTKMVGGVTPGKG
+                     GTTHLGLPVFNTVREAVAATGATASVIYVPAPFCKDSILEAIDAGIKLIITITEGIPT
+                     LDMLTVKVKLDEAGVRMIGPNCPGVITPGECKIGIQPGHIHKPGKVGIVSRSGTLTYE
+                     AVKQTTDYGFGQSTCVGIGGDPIPGSNFIDILEMFEKDPQTEAIVMIGEIGGSAEEEA
+                     AAYIKEHVTKPVVGYIAGVTAPKGKRMGHAGAIIAGGKGTADEKFAALEAAGVKTVRS
+                     LADIGEALKTVLK"
+     CDS             complement(23558..24280)
+                     /gene="mngR_1"
+                     /locus_tag="IFLAKNEJ_00025"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P13669"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Mannosyl-D-glycerate transport/metabolism system
+                     repressor MngR"
+                     /db_xref="COG:COG2188"
+                     /translation="MGHKPLYRQIADRIREQIARGELKPGDALPTESALQTEFGVSRV
+                     TVRQALRQLVEQQILESIQGSGTYVKEERVNYDIFQLTSFDEKLSDRHVDTHSEVLIF
+                     EVIPADDFLQQQLQITAQDRVWHVKRVRYRKQKPMALEETWMPLALFPDLTWQVMENS
+                     KYHFIEEVKKMVIDRSEQEIIPLMPTEEMSRLLNISQTKPILEKVSRGYLVDGRVFEY
+                     SRNAFNTDDYKFTLIAQRKSSR"
+     CDS             24449..26365
+                     /gene="mngA"
+                     /locus_tag="IFLAKNEJ_00026"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P54745"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="PTS system
+                     2-O-alpha-mannosyl-D-glycerate-specific EIIABC component"
+                     /db_xref="COG:COG1299"
+                     /translation="MNLTTLTHRDALCLNARFTSREEAIHALTQRLAALGKISSTEQF
+                     LEEVYRRESLGPTALGEGLAVPHGKTAAVKEAAFAVATLSEPLQWEGVDGPEAVDLVV
+                     LLAIPPNEAGTTHMQLLTALTTRLADDEIRARIQSATTPDELLSALDDKGDTQPSASF
+                     SNAPTIVCVTACPAGIAHTYMAAEYLEKAGRKLGVNVYVEKQGANGIEGRLTADQLNS
+                     ATACIFAAEVAIKESERFNGIPALSVRVAEPIRHAEALMQQALTLKRSDETRTVQQDT
+                     QPVKSVKTELKQALLSGISFAVPLIVAGGTVLAVAVLLSQIFGLQDLFNEENSWLWMY
+                     RKLGGGLLGILMVPVLAAYTAYSLADKPALAPGFAAGLAANMIGSGFLGAVVGGLIAG
+                     YLMRWVKNHLRLSSKFNGFLTFYLYPVLGTLGAGSLMLFVVGEPVAWINNSLTAWLNG
+                     LSGSNALLLGAILGFMCSFDLGGPVNKAAYAFCLGAMANGVYGPYAIFASVKMVSAFT
+                     VTASTMLAPRLFKEFEIETGKSTWLLGLAGITEGAIPMAIEDPLRVIGSFVLGSMVTG
+                     AIVGAMNIGLSTPGAGIFSLFLLHDNGAGGVMAAIGWFGAALVGAAISTAILLIWRRH
+                     AVKHGNYLTDGVMP"
+     CDS             26383..29016
+                     /gene="mngB"
+                     /locus_tag="IFLAKNEJ_00027"
+                     /EC_number="3.2.1.-"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P54746"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Mannosylglycerate hydrolase"
+                     /db_xref="COG:COG0383"
+                     /translation="MKAVSRVHITPHMHWDREWYFTTEESRILLVNNMEEILCRLEQD
+                     NEYKYYVLDGQTAILEDYFAVKPENKDRVKKQVEAGKLIIGPWYTQTDTTIVSAESIV
+                     RNLMYGMRDCLAFGEPMKIGYLPDSFGMSGQLPHIYNGFGITRTMFWRGCSERHGTDK
+                     TEFLWQSSDGSEVTAQVLPLGYAIGKYLPADENGLRKRLDSYFDVLEKASVTKEILLP
+                     NGHDQMPLQQNIFEVMEKLREIYPQRKFVMSRFEEVFEQIEAQRESLATLKGEFIDGK
+                     YMRVHRTIGSTRMDIKIAHARIENKIVNLLEPLATLAWTLGFEYHHGLLEKMWKEILK
+                     NHAHDSIGCCCSDKVHREIVARFELAEDMADNLLRFYMRKIADNMPQSDADKLVLFNL
+                     MPWPREEVINTTVRLRASQFNLRDDRGQPVPYFIRHAREIDPGLIDRQIVHYGNYDPF
+                     MEFDIQINQIVPSMGYRTLYIEANQPGNVIAAKSDAEGILENAFWQIALNEDGTLQLV
+                     DKDSGVRYDRVLQIEESSDDGDEYDYSPAKEEWVMTSATAKPQCEITHEAWQSRAVIR
+                     YDMAVPLNLLERSVRQSTGRVGVEMVVTLSHNSRRIDVDINLDNQADDHRLRVLIPTS
+                     FNTDSVLADTQFGSLTRPVNDSAMNNWQQEGWKEAPVPVWNMLNYAALQEGRNGMAVF
+                     SEGLREFEVIGEEKKTFAITLLRGVGLLGKEDLFLRPGRPSGIKMPVPDSQLRGLLSC
+                     RLSLLSYTGTPTAAGVAQQARAWLTPVQCYNKIPWDAMKLNKAGFNVPESYSLLKMPP
+                     VGCLISALKKAEDRQEVILRLFNPAESATCDATVAFSREVISCSETMMDEHITTEENQ
+                     GSNLSGPFLPGQSRTFSYRLA"
+     CDS             29863..31431
+                     /gene="cydA"
+                     /locus_tag="IFLAKNEJ_00028"
+                     /EC_number="7.1.1.7"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0ABJ9"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Cytochrome bd-I ubiquinol oxidase subunit 1"
+                     /db_xref="COG:COG1271"
+                     /translation="MLDIVELSRLQFALTAMYHFLFVPLTLGMAFLLAIMETVYVLSG
+                     KQIYKDMTKFWGKLFGINFALGVATGLTMEFQFGTNWSYYSHYVGDIFGAPLAIEGLM
+                     AFFLESTFVGLFFFGWDRLGKVQHMCVTWLVALGSNLSALWILVANGWMQNPIASDFN
+                     FETMRMEMVSFSELVLNPVAQVKFVHTVASGYVTGAMFILGISAWYMLKGRDFAFAKR
+                     SFAIAASFGMAAVLSVIVLGDESGYEMGDVQKTKLAAIEAEWETQPAPAAFTLFGIPD
+                     QEEETNKFAIQIPYALGIIATRSVDTPVIGLKELMVQHEERIRNGMKAYSLLEQLRSG
+                     STDQAVRDQFNSMKKDLGYGLLLKRYTPNVADATEAQIQQATKDSIPRVAPLYFAFRI
+                     MVACGFLLLAIIALSFWSVIRNRIGEKKWLLRAALYGIPLPWIAVEAGWFVAEYGRQP
+                     WAIGEVLPTAVANSSLTAGDLIFSMVLICGLYTLFLVAELFLMFKFARLGPSSLKTGR
+                     YHFEQSSTTTQPAR"
+     CDS             31447..32586
+                     /gene="cydB"
+                     /locus_tag="IFLAKNEJ_00029"
+                     /EC_number="7.1.1.7"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0ABK2"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Cytochrome bd-I ubiquinol oxidase subunit 2"
+                     /db_xref="COG:COG1294"
+                     /translation="MIDYEVLRFIWWLLVGVLLIGFAVTDGFDMGVGMLTRFLGRNDT
+                     ERRIMINSIAPHWDGNQVWLITAGGALFAAWPMVYAAAFSGFYVAMILVLASLFFRPV
+                     GFDYRSKIEETRWRNMWDWGIFIGSFVPPLVIGVAFGNLLQGVPFNVDEYLRLYYTGN
+                     FFQLLNPFGLLAGVVSVGMIITQGATYLQMRTVGELHLRTRATAQVAALVTLVCFALA
+                     GVWVMYGIDGYVVKSTMDHYAASNPLNKEVVREAGAWLVNFNNTPILWAIPALGVVLP
+                     LLTILTARMDKAAWAFVFSSLTLACIILTAGIAMFPFVMPSSTMMNASLTMWDATSSQ
+                     LTLNVMTWVAVVLVPIILLYTAWCYWKMFGRITKEDIERNTHSLY"
+     CDS             32601..32714
+                     /gene="cydX"
+                     /locus_tag="IFLAKNEJ_00030"
+                     /EC_number="7.1.1.7"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P56100"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Cytochrome bd-I ubiquinol oxidase subunit X"
+                     /db_xref="COG:COG4890"
+                     /translation="MWYFAWILGTLLACSFGVITALALEHVESGKAGQEDI"
+     CDS             32714..33007
+                     /locus_tag="IFLAKNEJ_00031"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MSKIIATLYAVMDKRPLRALSFVMALLLAGCMFWDPSRFAAKTS
+                     ELEIWHGLLLMWAVCAGVIHGVGFRPQKVLWQGIFCPLLADIVLIVGLIFFFF"
+     CDS             33157..33561
+                     /gene="ybgC"
+                     /locus_tag="IFLAKNEJ_00032"
+                     /EC_number="3.1.2.-"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0A8Z3"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Acyl-CoA thioester hydrolase YbgC"
+                     /db_xref="COG:COG0824"
+                     /translation="MNTTLFRWPVRVYYEDTDAGGVVYHASYVAFYERARTEMLRHHH
+                     FSQQALMAERVAFVVRKMTVEYYAPARLDDMLEIQTEITSMRGTSLVFTQRIVNAENT
+                     LLNEAEVLVVCVDPLKMKPRALPKSIVAEFKQ"
+     CDS             33558..34250
+                     /gene="tolQ"
+                     /locus_tag="IFLAKNEJ_00033"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0ABU9"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Tol-Pal system protein TolQ"
+                     /db_xref="COG:COG0811"
+                     /translation="MTDMNILDLFLKASLLVKLIMLILIGFSIASWAIIIQRTRILNA
+                     AAREAEAFEDKFWSGIELSRLYQESQGKRDNLTGSEQIFYSGFKEFVRLHRANSHAPE
+                     AVVEGASRAMRISMNRELENLETHIPFLGTVGSISPYIGLFGTVWGIMHAFIALGAVK
+                     QATLQMVAPGIAEALIATAIGLFAAIPAVMAYNRLNQRVNKLELNYDNFMEEFTAILH
+                     RQAFTVSESNKG"
+     CDS             34254..34682
+                     /gene="tolR"
+                     /locus_tag="IFLAKNEJ_00034"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0ABV6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Tol-Pal system protein TolR"
+                     /db_xref="COG:COG0848"
+                     /translation="MARARGRGRRDLKSEINIVPLLDVLLVLLLIFMATAPIITQSVE
+                     VDLPDATESQAVSSNDNPPVIVEVSGIGQYTVVVEKDRLERLPPEQVVAEVSSRFKAN
+                     PKTVFLIGGAKDVPYDEIIKALNLLHSAGVKSVGLMTQPI"
+     CDS             34747..36012
+                     /gene="tolA"
+                     /locus_tag="IFLAKNEJ_00035"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P19934"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Tol-Pal system protein TolA"
+                     /db_xref="COG:COG3064"
+                     /translation="MSKATEQNDKLKRAIIISAVLHVILFAALIWSSFDENIEASAGG
+                     GGGSSIDAVMVDSGAVVEQYKRMQSQESSAKRSDEQRKMKEQQAAEELREKQAAEQER
+                     LKQLEKERLAAQEQKKQAEEAAKQAELKQKQAEEAAAKAAADAKAKAEADAKAAEEAA
+                     KKAAADAKKKAEAEAAKAAAEAQKKAEAAAAALKKKAEAAEAAAAEARKKAATEAAEK
+                     AKAEAEKKAAAEKAAADKKAAAEKAAADKKAAEKAAAEKAAADKKAAAEKAAADKKAA
+                     AAKAAAEKAAAAKAAAEADDIFGELSSGKNAPKTGGGAKGNNASPAGSGNTKNNGASG
+                     ADINNYAGQIKSAIESKFYDASSYAGKTCTLRIKLAPDGMLLDIKPEGGDPALCQAAL
+                     AAAKLAKIPKPPSQAVYEVFKNAPLDFKP"
+     CDS             36145..37437
+                     /gene="tolB"
+                     /locus_tag="IFLAKNEJ_00036"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0A855"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Tol-Pal system protein TolB"
+                     /db_xref="COG:COG0823"
+                     /translation="MKQALRVAFGFLILWASVLHAEVRIVIDSGVDSGRPIGVVPFQW
+                     AGPGAAPEDIGGIVAADLRNSGKFNPLDRARLPQQPGSAQEVQPAAWSALGIDAVVVG
+                     QVTPNPDGSYNVAYQLVDTGGAPGTVLAQNSYKVNKQWLRYAGHTASDEVFEKLTGIK
+                     GAFRTRIAYVVQTNGGQFPYELRVSDYDGYNQFVVHRSPQPLMSPAWSPDGSKLAYVT
+                     FESGRSALVIQTLANGAVRQVASFPRHNGAPAFSPDGSKLAFALSKTGSLNLYVMDLA
+                     SGQIRQVTDGRSNNTEPTWFPDSQNLAFTSDQAGRPQVYKVNINGGAPQRITWEGSQN
+                     QDADVSSDGKFMVMVSSNGGQQHIAKQDLATGGVQVLSSTFLDETPSLAPNGTMVIYS
+                     SSQGMGSVLNLVSTDGRFKARLPATDGQVKFPAWSPYL"
+     CDS             37472..37993
+                     /gene="pal_1"
+                     /locus_tag="IFLAKNEJ_00037"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P0A912"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Peptidoglycan-associated lipoprotein"
+                     /db_xref="COG:COG2885"
+                     /translation="MQLNKVLKGLMIALPVMAIAACSSNKNASNDGSEGMLGAGTGMD
+                     ANGGNGNMSSEEQARLQMQQLQQNNIVYFDLDKYDIRSDFAQMLDAHANFLRSNPSYK
+                     VTVEGHADERGTPEYNISLGERRANAVKMYLQGKGVSADQISIVSYGKEKPAVLGHDE
+                     AAYSKNRRAVLVY"
+     CDS             38003..38794
+                     /gene="cpoB"
+                     /locus_tag="IFLAKNEJ_00038"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P45955"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Cell division coordinator CpoB"
+                     /db_xref="COG:COG1729"
+                     /translation="MSSNFRHQLLSLSLLVGIAAPWAAFAQAPISSVGSGSVEDRVTQ
+                     LERISNAHSQLLTQLQQQLSDNQSDIDSLRGQIQENQYQLNQVVERQKQILLQIDSLS
+                     SGGAAAQSTSSDQSGAAASTTPTADAGTANAGAPVKSGDANTDYNAAIALVQDKSRQD
+                     DAMVAFQNFIKNYPDSTYLPNANYWLGQLNYNKGKKDDAAYYFASVVKNYPKSPKAAD
+                     AMFKVGVIMQDKGDTAKAKAVYQQVISKYPGTDGAKQAQKRLNAM"
+     assembly_gap    39013..39380
+                     /estimated_length=368
+                     /gap_type="within scaffold"
+                     /linkage_evidence="paired-ends"
+     tRNA            39437..39512
+                     /locus_tag="IFLAKNEJ_00039"
+                     /product="tRNA-Lys"
+                     /inference="COORDINATES:profile:Aragorn:001002"
+                     /note="tRNA-Lys(ttt)"
+     tRNA            39659..39734
+                     /locus_tag="IFLAKNEJ_00040"
+                     /product="tRNA-Lys"
+                     /inference="COORDINATES:profile:Aragorn:001002"
+                     /note="tRNA-Lys(ttt)"
+     tRNA            39768..39843
+                     /locus_tag="IFLAKNEJ_00041"
+                     /product="tRNA-Lys"
+                     /inference="COORDINATES:profile:Aragorn:001002"
+                     /note="tRNA-Lys(ttt)"
+     CDS             40248..41291
+                     /gene="nadA"
+                     /locus_tag="IFLAKNEJ_00042"
+                     /EC_number="2.5.1.72"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P11458"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Quinolinate synthase A"
+                     /db_xref="COG:COG0379"
+                     /translation="MSVMFDPDTAIYPFPPKPTPLSIDEKAYYREKIKRLLKERNAVM
+                     VAHYYTDPEIQQLAEETGGCISDSLEMARFGAKHPASTLLVAGVRFMGETAKILSPEK
+                     TILMPTLQAECSLDLGCPVEEFNAFCDAHPDRTVVVYANTSAAVKARADWVVTSSIAV
+                     ELIDHLDSLGEKIIWAPDKHLGRYVQKQTGGDILCWQGACIVHDEFKTQALTRLQEEY
+                     PDAAILVHPESPQAIVDMADAVGSTSQLIAAAKTLPHQRLIVATDRGIFYKMQQAVPD
+                     KELLEAPTAGEGATCRSCAHCPWMAMNGLQSIAEALEQEGSNHEVHVDERLRERALVP
+                     LNRMLDFAATLRG"
+     CDS             103850..104548
+                     /gene="mngR_2"
+                     /locus_tag="IFLAKNEJ_03430"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA sequence:UniProtKB:P13669"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Mannosyl-D-glycerate transport/metabolism system
+                     repressor MngR"
+                     /db_xref="COG:COG2188"
+                     /translation="MIFQKIARLLKSEINGNSWHVGDLLPSEAELAVRYNVSRNTLRK
+                     ALSLLEGEGIIHRKHGSGTYIQKKNFVAHIDHMNSFSEIAHKSGKEAGSQIMKFEVQD
+                     ASPTIATELNLVTGEQVYYIKRLRFIEDNAAQLEETWMSVARFPDLTVSHMQKSKFSY
+                     IENECGIKIIGTFETFSPTFPTPEIASILRISPRDPILKIQTQAVDSNSIPLDYSLLY
+                     SNIFEFQVKYFFPR"
