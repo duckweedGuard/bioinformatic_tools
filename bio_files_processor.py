@@ -1,20 +1,21 @@
 import os
 
 
-def convert_multiline_fasta_to_oneline(input_fasta: str, output_fasta: str = 'converted_fasta'):
+def convert_multiline_fasta_to_oneline(input_fasta: str, output_fasta: str = None):
     """
     Reads the input fasta-file, in which the sequence can be split into several lines,
     then saves it into a new fasta-file in which each sequence fits into one line
 
     :param input_fasta: Function convert_multiline_fasta_to_oneline
     :param output_fasta: new fasta-file in which each sequence fits into one line
-    :return: new fasta-file
     """
     if not os.path.isfile(input_fasta):
         raise ValueError('No such fasta file in directory')
     if output_fasta is None:
-        output_fasta = 'out_' + input_fasta
-    with open(input_fasta, mode='r') as file, open(output_fasta + '.fasta', mode='w') as out_file:
+        output_fasta = 'converted_' + input_fasta
+    else:
+        output_fasta = output_fasta + '.fasta'
+    with open(input_fasta, mode='r') as file, open(output_fasta, mode='w') as out_file:
         out_file.write(file.readline())
         for line in file:
             if '>' in line:
