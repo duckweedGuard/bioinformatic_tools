@@ -165,7 +165,7 @@ convert_multiline_fasta_to_oneline('fasta.fasta')
 **4.2. select_genes_from_gbk_to_fasta**
 
 ``` python
-nput_gbk = 'data/short_example_gbt.gbt'
+nput_gbk = 'data/short_example_gbk.gbk'
 genes = ['mngR', 'pxpB']
 n_before = 2
 n_after = 2
