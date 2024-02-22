@@ -70,7 +70,7 @@ An AminoAcidSequence class:
 
 ◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆
 ### Usage example: <a name="examples"></a> 
-
+Make sure that the Bio and Bio.SeqUtils modules are installed
 
 **☆ ☆ ☆ :. o(≧▽≦)o .: ☆ ☆ ☆**
 
